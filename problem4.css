@@ -1,22 +1,87 @@
-body{}
+
 h1{
-    border: solid 2px; border-color: blue;
-    background-color:aquamarine; color:black;
+    background-color:rgb(180, 238, 219); color:black;
     text-align: center;
     width: 50%;
-    margin-left: auto; margin-right:auto;
+    margin-left: auto; margin-right:auto; border-bottom: 2px solid gray;
+    margin-top:0px; margin-bottom: 15px;
 }
-div.totalsum{
-    border:solid 2px; border-color: black;  background-color: aquamarine; color:black;
+header.totalsum{
+    border-radius:20px; border: 5px solid black;  background-color: rgb(180, 238, 219); color:black;
     text-align: center;
-    width:50%;
-    margin
+    width:50%; height:100%;
+    margin-left: auto; margin-right:auto; 
 }
-div.totalsum h3{
-    font-size:30px; margin-top: 0px; 
+header.totalsum p{
+    font-size:40px;  margin-top: 0px; margin-bottom:15px; 
 }
-div.total {
-    display: flex; flex-direction: row; justify-content: space-evenly;
+h3{
+    margin-top:5px; margin-bottom: 5px;
 }
+div.total 
+{
+    display: flex; flex-direction: row; justify-content: space-evenly; margin-bottom: 10px;
+    }
+div.allincome{
+    color:blue;
+}
+span.plus-button { display:inline-block;  width:20px; height:20px; border-radius: 100%; border-color: black; border: 1px solid; 
+    font-size: 14px; background-color: aliceblue;
+}
+div.alloutcome{
+    color:red;
+}
+span.minus-button {
+    display:inline-block; width: 20px; height: 20px;
+    border-radius: 100%; border-color: black; border: 1px solid; 
+    font-size: 14px; background-color: aliceblue;
+}
+div.date {
+    box-sizing: border-box; width:50%; margin-left: auto; margin-right:auto; 
+    display:flex; justify-content: center; border-top: solid 2px; border-color: gray; 
+    margin-top: 30px;  padding-top:10px; padding-bottom: 20px;
+}
+button.left, .right{
+    border:none; background-color: white;
+}
+section.main {
+    box-sizing: border-box;  width:50%; margin-left: auto; margin-right:auto;
+    display: flex; flex-direction: row; justify-content: space-between;
+    border-bottom: solid 1px; padding-bottom: 20px; border-color: rgb(190, 188, 188);
+}
+button.income, button.outcome {
+   border-radius: 10px; background-color: rgb(17, 127, 90); color:white;
 
-div.
+}
+button.income:hover, button.outcome:hover { 
+ background-color:pink; color:black;
+}
+div.item1, div.item2, div.item3, div.item4, div.item5, div.item6 {
+    box-sizing: border-box;  width:50%; margin-left: auto; margin-right:auto;
+    display: flex; justify-content: space-between; border-radius: 30px; background-color: rgb(180, 238, 219);
+    color:black; padding:15px;
+    margin-top: 15px; margin-bottom: 10px;
+}
+.category{
+    font-size: 14px;
+}
+section.details{
+    height: 400px; overflow-y: scroll; width:50%; 
+    margin-left: auto; margin-right: auto;   
+}
+.moneyminus{
+    color:red;
+}
+.moneyplus{
+    color:blue;
+}
+button.x{
+    border:none; background-color: rgb(180, 238, 219);
+}
+div.plusbutton{
+    text-align: center;
+}
+button.last{
+    display:inline-block; width:50%; 
+    margin-left: auto; margin-right: auto;
+}

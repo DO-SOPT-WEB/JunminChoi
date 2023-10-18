@@ -107,17 +107,17 @@ section.details{
     width:50%; 
     margin:0 auto 0 auto;
 }
-.moneyminus{
+.money_minus{
     color:red;
 }
-.moneyplus{
+.money_plus{
     color:blue;
 }
 button.x{
     border:none; 
     background-color: rgb(180, 238, 219);
 }
-div.plusbutton{
+div.plus_button{
     text-align: center;
 }
 button.last{

@@ -3,71 +3,109 @@ h1{
     background-color:rgb(180, 238, 219); color:black;
     text-align: center;
     width: 50%;
-    margin-left: auto; margin-right:auto; border-bottom: 2px solid gray;
-    margin-top:0px; margin-bottom: 15px;
+    border-bottom: 2px solid gray;
+    margin:0px auto 15px auto;
 }
 header.totalsum{
-    border-radius:20px; border: 5px solid black;  background-color: rgb(180, 238, 219); color:black;
+    border-radius:20px; 
+    border: 5px solid black;  
+    background-color: rgb(180, 238, 219); color:black;
     text-align: center;
     width:50%; height:100%;
-    margin-left: auto; margin-right:auto; 
+    margin:0 auto 0 auto; 
 }
 header.totalsum p{
-    font-size:40px;  margin-top: 0px; margin-bottom:15px; 
+    font-size:40px;  
+    margin:0px 0 15px 0;  
 }
 h3{
-    margin-top:5px; margin-bottom: 5px;
+    margin:5px 0 5px 0;
 }
 div.total 
 {
-    display: flex; flex-direction: row; justify-content: space-evenly; margin-bottom: 10px;
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-evenly; 
+    margin-bottom: 10px;
     }
 div.allincome{
     color:blue;
 }
-span.plus-button { display:inline-block;  width:20px; height:20px; border-radius: 100%; border-color: black; border: 1px solid; 
-    font-size: 14px; background-color: aliceblue;
+span.plus-button { 
+    display:inline-block;  
+    width:20px; 
+    height:20px; 
+    border-radius: 100%; 
+    border-color: black; 
+    border: 1px solid; 
+    font-size: 14px; 
+    background-color: aliceblue;
 }
 div.alloutcome{
     color:red;
 }
 span.minus-button {
-    display:inline-block; width: 20px; height: 20px;
-    border-radius: 100%; border-color: black; border: 1px solid; 
-    font-size: 14px; background-color: aliceblue;
+    display:inline-block; 
+    width: 20px; 
+    height: 20px;
+    border-radius: 100%; 
+    border-color: black; 
+    border: 1px solid; 
+    font-size: 14px; 
+    background-color: aliceblue;
 }
 div.date {
-    box-sizing: border-box; width:50%; margin-left: auto; margin-right:auto; 
-    display:flex; justify-content: center; border-top: solid 2px; border-color: gray; 
-    margin-top: 30px;  padding-top:10px; padding-bottom: 20px;
+    box-sizing: border-box; 
+    width:50%; margin:30px auto 0 auto; 
+    display:flex; 
+    justify-content: center; 
+    border-top: solid 2px; 
+    border-color: gray; 
+    padding:10px 0 20px 0;
 }
 button.left, .right{
-    border:none; background-color: white;
+    border:none; 
+    background-color: white;
 }
 section.main {
-    box-sizing: border-box;  width:50%; margin-left: auto; margin-right:auto;
-    display: flex; flex-direction: row; justify-content: space-between;
-    border-bottom: solid 1px; padding-bottom: 20px; border-color: rgb(190, 188, 188);
+    box-sizing: border-box;  
+    width:50%; 
+    margin:0 auto 0 auto;
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between;
+    border-bottom: solid 1px; 
+    padding-bottom: 20px; 
+    border-color: rgb(190, 188, 188);
 }
 button.income, button.outcome {
-   border-radius: 10px; background-color: rgb(17, 127, 90); color:white;
+    border-radius: 10px; 
+    background-color: rgb(17, 127, 90); 
+    color:white;
 
 }
 button.income:hover, button.outcome:hover { 
- background-color:pink; color:black;
+    background-color:pink; 
+    color:black;
 }
 div.item1, div.item2, div.item3, div.item4, div.item5, div.item6 {
-    box-sizing: border-box;  width:50%; margin-left: auto; margin-right:auto;
-    display: flex; justify-content: space-between; border-radius: 30px; background-color: rgb(180, 238, 219);
+    box-sizing: border-box;  
+    width:50%;
+    margin:15px auto 10px auto;
+    display: flex; 
+    justify-content: space-between; 
+    border-radius: 30px; 
+    background-color: rgb(180, 238, 219);
     color:black; padding:15px;
-    margin-top: 15px; margin-bottom: 10px;
 }
 .category{
     font-size: 14px;
 }
 section.details{
-    height: 400px; overflow-y: scroll; width:50%; 
-    margin-left: auto; margin-right: auto;   
+    height: 400px; 
+    overflow-y: scroll; 
+    width:50%; 
+    margin:0 auto 0 auto;
 }
 .moneyminus{
     color:red;
@@ -76,12 +114,14 @@ section.details{
     color:blue;
 }
 button.x{
-    border:none; background-color: rgb(180, 238, 219);
+    border:none; 
+    background-color: rgb(180, 238, 219);
 }
 div.plusbutton{
     text-align: center;
 }
 button.last{
-    display:inline-block; width:50%; 
-    margin-left: auto; margin-right: auto;
+    display:inline-block; 
+    width:50%; 
+    margin:0 auto 0 auto;
 }

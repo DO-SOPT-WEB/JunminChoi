@@ -116,11 +116,26 @@ button.x{
     border:none; 
     background-color: rgb(180, 238, 219);
 }
-div.plus_button{
-    text-align: center;
-}
-button.last{
-    display:inline-block; 
-    width:50%; 
+footer{
+    width:50%;
     margin:0 auto 0 auto;
+    background-color:  rgb(180, 238, 219);
+    border-radius: 5rem;
+    height: 2rem;
+}
+div.plus_button{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 2rem;
+    
+}
+.last{
+    display:inline-block; 
+    width:10%; 
+    border: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 5rem;
+    background-color: rgb(112, 179, 112);
 }

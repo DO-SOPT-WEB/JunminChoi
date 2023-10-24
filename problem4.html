@@ -6,64 +6,33 @@
     <link rel="stylesheet" href="problem4.css"/>
     <title>가계부</title>
 </head>
-<body>
+<body class="scroll"> 
 <h1>어디보자 얼마 남았나?</h1>
 <header class="totalsum">
-<h3>호주머니</h3><p><strong> 71000</strong></p>
-<div class="total" >
-<div class="allincome"> <span class="plus-button">+</span> 총수입 150000</div>
-<div class="alloutcome"><span class="minus-button">-</span> 총지출 79000</div>
-</div>
+    <h3>호주머니</h3><p><strong> 71000</strong></p>
+    <div class="total" >
+        <div class="allincome"> <span class="plus-button">+</span> 총수입 150000</div>
+        <div class="alloutcome"><span class="minus-button">-</span> 총지출 79000</div>
+    </div>
 </header>
 <div class="date">
-<button class="left">&lt;</button> 10월 12일 <button class="right">&gt;</button>
+    <button class="left">&lt;</button> 10월 12일 <button class="right">&gt;</button>
 </div>
 <section class="main">
 내역리스트 
 <div>
-<input type="checkbox" checked="checked"/><button class="income">수입</button>
-<input type="checkbox" checked="checked"/><button class="outcome">수출</button>
+    <input type="checkbox" checked="checked"/><button class="income">수입</button>
+    <input type="checkbox" checked="checked"/><button class="outcome">수출</button>
 </div>
 </section>
 <section class="details">
-    <div class="item"> <span class="category">쇼핑</span>
-            <strong class="detail">모던자바스크립트</strong>
-            <div>
-                <span class="money_minus"> 40500</span> 
-                <button class="x">x</button></div>
-    </div>
-    <div class="item"> <span class="category">식비</span>
-        <strong class="detail">워크샵 1차비용 </strong>
-        <div>
-            <span class="money_minus"> 13700</span> 
-            <button class="x">x</button></div>
-        
-    </div>  
-    <div class="item"> <span class="category">식비</span>
-        <strong class="detail">워크샵2 차비용 </strong>
-        <div>
-            <span class="money_minus"> 2800</span> 
-            <button class="x">x</button></div>
-    </div>
-    <div class="item"> <span class="category">용돈</span>
-        <strong class="detail">추석용돈</strong>
-        <div>
-            <span class="money_plus"> 150000</span> 
-            <button class="x">x</button></div>
-    </div>
-    <div class="item"> <span class="category">식비</span>
-        <strong class="detail">세븐일레븐</strong>
-        <div>
-            <span class="money_minus">10800</span> 
-            <button class="x">x</button></div>
-    </div>
-    <div class="item"> <span class="category">교통</span>
-        <strong class="detail">고속버스</strong>
-        <div>
-            <span class="money_minus"> 11200</span> 
-            <button class="x">x</button></div>
-    </div>
     </section>
-<div class="plus_button"><button class="last">+</button></div>
+<footer>
+    <div class="plus_button">
+        <button class="last">+</button>
+    </div>
+</footer>
+    <script src="problem4.js">
+    </script>
 </body>
 </html>

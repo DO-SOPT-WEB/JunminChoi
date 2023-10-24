@@ -77,15 +77,9 @@ section.main {
     padding-bottom: 20px; 
     border-color: rgb(190, 188, 188);
 }
-button.income, button.outcome {
-    border-radius: 10px; 
-    background-color: rgb(17, 127, 90); 
-    color:white;
-
-}
-button.income:hover, button.outcome:hover { 
-    background-color:pink; 
-    color:black;
+button.income, button.spend {
+    border: none;
+    background-color: white;
 }
 div.item{
     box-sizing: border-box;  

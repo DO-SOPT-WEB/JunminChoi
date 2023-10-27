@@ -15,8 +15,8 @@ let HISTORY_income = [
 ];
 
 const CATEGORIES = {
-  '수입': ['용돈', '알바', '공부'],
-  '지출': ['여행', '식사', '교통비']
+  '수입': ['용돈', '알바비', '환불액'],
+  '지출': ['여행비', '식사비', '교통비']
 };
 
 const emptylist = [];
@@ -154,9 +154,7 @@ addEntryBtn.addEventListener('click', function() {
   const category = typeSelect.value;
   const detail = descriptionInput.value;
   let money = parseFloat(amountInput.value);
-  console.log(money);
   if((money == 0)||isNaN(money)){
-  console.log('hello')
     return;
   
   };

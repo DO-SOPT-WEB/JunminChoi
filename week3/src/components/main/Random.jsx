@@ -1,7 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
+import CountDown from "./CountDown";
 
 const Random = () => {
-  return <div>얖</div>;
+  const [randomType, setRandomType] = useState(false);
+  function result() {
+    setRandomType(true);
+  }
+  return (
+    <>
+      {!randomType && (
+        <>
+          <p>랜덤으로 추천해줄게</p>
+          <button onClick={result}>start</button>
+        </>
+      )}
+      {randomType && <CountDown setRandomType={setRandomType} />}
+    </>
+  );
 };
 
 export default Random;

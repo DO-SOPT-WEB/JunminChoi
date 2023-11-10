@@ -1,0 +1,21 @@
+button {
+  width: 7rem;
+  height: 4rem;
+
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+button:hover {
+  background-color: yellowgreen;
+  color: black;
+}
+
+button:disabled {
+  background-color: rgb(91, 118, 37);
+  color: white;
+}
+button.selected {
+  background-color: skyblue;
+  color: black;
+}

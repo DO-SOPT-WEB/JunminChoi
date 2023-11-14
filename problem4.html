@@ -1,69 +1,73 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="problem4.css"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="problem4.css" />
     <title>가계부</title>
-</head>
-<body>
-<h1>어디보자 얼마 남았나?</h1>
-<header class="totalsum">
-<h3>호주머니</h3><p><strong> 71000</strong></p>
-<div class="total" >
-<div class="allincome"> <span class="plus-button">+</span> 총수입 150000</div>
-<div class="alloutcome"><span class="minus-button">-</span> 총지출 79000</div>
-</div>
-</header>
-<div class="date">
-<button type="button" class="left">&lt;</button> 10월 12일 <button type="button" class="right">&gt;</button>
-</div>
-<section class="main">
-내역리스트 
-<div>
-<input type="checkbox" checked/><button type="button" class="income">수입</button>
-<input type="checkbox" checked/><button type="button" class="outcome">수출</button>
-</div>
-</section>
-<section class="details">
-    <div class="item"> <span class="category">쇼핑</span>
-            <strong class="detail">모던자바스크립트</strong>
-            <div>
-                <span class="money_minus"> 40500</span> 
-                <button type="button" class="x">x</button></div>
+  </head>
+  <body class="scroll">
+    <h1>어디보자 얼마 남았나?</h1>
+    <header class="totalsum">
+      <h3>호주머니</h3>
+      <p><strong> 0</strong></p>
+      <div class="total">
+        <div class="allincome">
+          <span class="plus-button">+</span>
+            <span class="incomevalue">0</span>
+        </span>
+        <div class="alloutcome">
+          <span class="minus-button">-</span>
+            <span class="outcomevalue">0</span>
+        </div>
+      </div>
+    </header>
+    <div class="date">
+      <button class="left">&lt;</button> 10월 12일
+      <button class="right">&gt;</button>
     </div>
-    <div class="item"> <span class="category">식비</span>
-        <strong class="detail">워크샵 1차비용 </strong>
-        <div>
-            <span class="money_minus"> 13700</span> 
-            <button type="button" class="x">x</button></div>
-        
-    </div>  
-    <div class="item"> <span class="category">식비</span>
-        <strong class="detail">워크샵2 차비용 </strong>
-        <div>
-            <span class="money_minus"> 2800</span> 
-            <button type="button" class="x">x</button></div>
-    </div>
-    <div class="item"> <span class="category">용돈</span>
-        <strong class="detail">추석용돈</strong>
-        <div>
-            <span class="money_plus"> 150000</span> 
-            <button type="button" class="x">x</button></div>
-    </div>
-    <div class="item"> <span class="category">식비</span>
-        <strong class="detail">세븐일레븐</strong>
-        <div>
-            <span class="money_minus">10800</span> 
-            <button type="button" class="x">x</button></div>
-    </div>
-    <div class="item"> <span class="category">교통</span>
-        <strong class="detail">고속버스</strong>
-        <div>
-            <span class="money_minus"> 11200</span> 
-            <button type="button" class="x">x</button></div>
-    </div>
+    <section class="main">
+      내역리스트
+      <div>
+        <input type="checkbox" id="input_box" name="input_box" checked />
+        <label for="input_box">수입</label>
+        <input type="checkbox" id="output_box" name="output_box" checked />
+        <label for="output_box">지출</label>
+      </div>
     </section>
-<footer class="plus_button"><button type="button" class="last">+</button></footer>
-</body>
+    <section class="details"></section>
+    
+    <footer>
+      <div class="plus_button">
+        <button type="button" class="last" id="showModalBtn">+</button>
+      </div>
+    </footer>
+
+   
+<!-- Modal -->
+<div id="entryModal" class="modal">
+  <div class="modal-content">
+    <span class="close">닫기</span>
+    <!-- 수입/지출 선택 -->
+    <div>
+      <button id="incomeBtn">수입</button>
+      <button id="expenseBtn">지출</button>
+    </div>
+    <!-- 종류 선택 -->
+    <select id="typeSelect">
+      <option value="용돈">용돈</option>
+      <option value="알바">알바비</option>
+      <option value="환불">환불액</option>
+    </select>
+    <!-- 금액 입력 -->
+    <input type="number" id="amountInput" placeholder="금액">
+    <!-- 내용 입력 -->
+    <textarea id="descriptionInput" placeholder="내용"></textarea>
+    <!-- 추가 버튼 -->
+    <button id="addEntry">추가하기</button>
+  </div>
+</div>
+
+    <script src="problem4.js"></script>
+  </body>
 </html>

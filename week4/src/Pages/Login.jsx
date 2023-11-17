@@ -45,8 +45,14 @@ const Login = () => {
           onChange={(e) => setLoginPassWord(e.target.value)}
         />
       </section>
-      <MoveButton onClick={handleLogin}>로그인 </MoveButton>
-      <Button to="/SignUp">회원가입 </Button>
+
+      <Button type="button" onClick={handleLogin}>
+        로그인{" "}
+      </Button>
+
+      <Button type="button" to="/SignUp">
+        회원가입{" "}
+      </Button>
     </Container>
   );
 };
@@ -59,15 +65,6 @@ const Container = styled.div`
   flex-direction: column;
 `;
 
-const MoveButton = styled.button`
-  background-color: black;
-  color: white;
-
-  margin: 1px;
-  font-size: 1rem;
-
-  text-decoration: none;
-`;
 const Button = styled(Link)`
   background-color: black;
   color: white;

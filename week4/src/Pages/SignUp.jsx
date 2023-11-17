@@ -7,8 +7,22 @@ const SignUp = () => {
   const [userId, setUserId] = useState("");
   const [passWord, setPassWord] = useState("");
   const [nickName, setNickName] = useState("");
+  const [isExist, setIsExist] = useState(null);
 
   const navigate = useNavigate();
+
+  const idCheck = async () => {
+    try {
+      const idChecker = await axios.get(
+        `${
+          import.meta.env.VITE_BASE_URL
+        }/api/v1/members/check?username=${userId}`
+      );
+      setIsExist(idChecker.data.isExist);
+    } catch (e) {
+      console.log(e);
+    }
+  };
 
   const handleSignUp = async () => {
     try {
@@ -21,7 +35,6 @@ const SignUp = () => {
         }
       );
       response && navigate("/login");
-      console.log("회원가입완료");
     } catch (e) {
       console.log(e);
     }
@@ -38,7 +51,14 @@ const SignUp = () => {
           value={userId}
           onChange={(e) => setUserId(e.target.value)}
         />
-        <button>중복체크</button>
+        <Button
+          onClick={idCheck}
+          className={
+            isExist === null ? null : isExist === true ? "red" : "green"
+          }
+        >
+          중복체크
+        </Button>
       </section>
       <section>
         비밀번호
@@ -58,7 +78,16 @@ const SignUp = () => {
           onChange={(e) => setNickName(e.target.value)}
         />
       </section>
-      <MoveButton onClick={handleSignUp}>회원가입 </MoveButton>
+      {userId === "" ||
+      passWord === "" ||
+      nickName === "" ||
+      isExist == true ? (
+        <Button onClick={handleSignUp} disabled>
+          회원가입{" "}
+        </Button>
+      ) : (
+        <Button onClick={handleSignUp}>회원가입 </Button>
+      )}
     </Container>
   );
 };
@@ -72,7 +101,7 @@ const Container = styled.div`
   flex-direction: column;
 `;
 
-const MoveButton = styled.button`
+const Button = styled.button`
   background-color: black;
   color: white;
 
@@ -80,4 +109,11 @@ const MoveButton = styled.button`
   font-size: 1rem;
 
   text-decoration: none;
+
+  &.red {
+    background-color: red;
+  }
+  &.green {
+    background-color: green;
+  }
 `;
